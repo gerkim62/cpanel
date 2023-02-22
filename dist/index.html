@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Bootstrap Example</title>
+
+    <style>
+      ul label:hover {
+        background-color: #f5f5f5;
+        color: green;
+        text-decoration: underline;
+      }
+
+      input[type="checkbox"]:checked + label {
+        color: rebeccapurple;
+      }
+
+      input[type="checkbox"]:hover {
+        cursor: pointer;
+        background-color: #f5f5f5;
+      }
+    </style>
+
+    <!-- Add the Bootstrap CSS file -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="h5 m-3 text-center">Approve Autofill</h1>
+
+      <div class="form-group">
+        <select class="form-control mb-2" name="" id="">
+          <option value="all">All</option>
+          <option selected value="pending">Pending</option>
+          <option value="approved">Approved</option>
+        </select>
+      </div>
+
+      <ul id="users" class="list-group">
+        <li class="list-group-item">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="checkbox1" />
+            <label
+              class="ml-3 form-check-label d-flex justify-content-between"
+              for="checkbox1"
+            >
+              <span>Gerison</span>
+              <span>MPESA</span>
+            </label>
+          </div>
+        </li>
+
+        <li class="list-group-item">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="checkbox3" />
+            <label
+              class="form-check-label d-flex justify-content-between ml-3"
+              for="checkbox3"
+            >
+              <span>Gerison</span>
+              <span>MPESA</span>
+            </label>
+          </div>
+        </li>
+      </ul>
+
+      <button class="btn btn-md btn-success btn-block my-3">Approve</button>
+    </div>
+    <script src="bundle.js"></script>
+  </body>
+</html>
